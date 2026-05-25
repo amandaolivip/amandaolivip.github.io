@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
-<body class="light-theme">
-<body class="dark-theme">
   <header>
     <nav>
       <ul>
@@ -26,11 +25,22 @@
       <h2>✧ Contato ✧</h2>
       <img src="https://media1.tenor.com/m/EC6mBMhIRugAAAAd/frieren-beyond-journey%27s-end-sousou-no-frieren.gif" alt="Frieren" class="frieren-gifs">
       <p>Oi! Deseja falar comigo? Envie-me uma mensagem através do formulário abaixo:</p>
-      <form action="https://mail.google.com/mail/?view=cm&fs=1&to=amandaovpaula@gmail.com" method="post" target="_blank">
-        <label for="mensagem">⋆ Mensagem:</label>
-        <textarea id="mensagem" name="text" rows="4" cols="50"></textarea>
-        <br>
-        <button type="submit">Enviar via Gmail</button>
+      <form id="form-contato">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+      <label for="mensagem">Mensagem:</label>
+      <textarea
+      id="mensagem"
+      name="mensagem"
+      rows="4"
+      cols="50"
+      required>
+      </textarea>
+      <br>
+      <button type="submit" id="btn-enviar">
+      <span id="btn-text">Enviar</span>
+      <span id="btn-loading" style="display:none;">Enviando...</span>
+    </button>
       </form>
       </div>
     </section>
@@ -39,7 +49,6 @@
   <footer>
     <p>&copy; 2026 Amanda Oliveira Viana de Paula. Todos os direitos reservados.</p>
   </footer>
-  
-</body>
+<script src="script.js"></script>
 </body>
 </html>
