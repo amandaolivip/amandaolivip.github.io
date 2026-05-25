@@ -16,6 +16,7 @@ document.getElementById("form-contato").addEventListener("submit", function(even
     "template_wxuqe8g",
     {
       nome: document.getElementById("nome").value,
+      email: document.getElementById("email").value,
       mensagem: document.getElementById("mensagem").value
     }
   )
