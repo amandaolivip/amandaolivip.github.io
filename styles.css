@@ -96,6 +96,7 @@ section {
  justify-content: center;
  padding: 10px;
  width: 100%;
+ border-radius: 12px;
 }
 
 .item {
@@ -106,7 +107,7 @@ section {
   max-width: 500px;
   width:100%;
   border-radius: 12px;
-  box-shadow: 0 4px 12px 
+  box-shadow: 0 4px 12px  
   rgba(0,0,0,0.15);
 }
  
@@ -127,14 +128,45 @@ svg:hover {
 
 @media (min-width: 768px) {
   .container {
-    width: 90%;
-    max-width: 1400px;
+    width: 95%;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 40px;
   }
   .item {
-    max-width: 700px;
-    flex: 1 1 400px;
+    max-width: 680px;
+    flex: 1 1 450px;
+    transition: transform 0.2s ease;
+  }
+  .item:hover {
+    transform: translateY(-3px);
+  }
+  nav ul {
+    justify-content: center;
+    gap: 30px;
+  }
+  nav ul li a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+  }
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    transition: width 0.25s ease;
+    transform: translateX(-50%);
+    background-color:#6A9FB5;
+  }
+  nav ul li a:hover::after {
+    width: 70%;
   }
 }
 
@@ -158,13 +190,17 @@ svg:hover {
   }
   nav ul {
     flex-wrap: wrap;
+    gap: 10px;
   }
   nav ul li {
-    margin: 8px 12px;
+    margin: 0;
   }
   nav ul li a {
     font-size: 16px;
-    padding: 6px 8px;
+    padding: 10px 14px;
     display: inline-block;
+  }
+  nav ul li a:active {
+    transform: scale(0.95);
   }
 }
