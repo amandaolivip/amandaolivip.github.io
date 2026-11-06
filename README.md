@@ -1,2 +1,2 @@
 # amandaolivip.github
-Site feito com HTML e CSS para visualização do meu currículo.
+Meu site feito com HTML e CSS e uso de JavaScript para envio de e-mails para contato.
