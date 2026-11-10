@@ -4,8 +4,9 @@
 }
 
 body {
-  background-color:#2E4A62;
+  background-color:#4D3221;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  color: #F2E9DC;
   margin: 0;
   padding: 0;
   display: flex;
@@ -36,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #6A9FB5;
+  color: #D9B49D;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -49,7 +50,7 @@ main {
 }
 
 footer {
-  color:#6A9FB5;
+  color:#F2E9DC;
   text-align: center;
   padding: 10px 0;
   position: static;
@@ -79,7 +80,7 @@ section {
   margin: 20px 0;
 }
 
-.frieren-gifs {
+.lain-gifs {
   width: 100%;
   max-width: 490px;
   height:auto;
@@ -90,7 +91,7 @@ section {
 }
 
 .container {
- background-color: #A3C5D9;
+ background-color: #907D6F;
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
@@ -163,7 +164,7 @@ svg:hover {
     height: 2px;
     transition: width 0.25s ease;
     transform: translateX(-50%);
-    background-color:#6A9FB5;
+    background-color:#D9B49D;
   }
   nav ul li a:hover::after {
     width: 70%;
